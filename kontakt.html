@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kontakt - Nocleg Wisła</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="kontakt.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container-fluid">
+            <nav>
+                <ul class="nav nav-pills">        
+                    <li class="nav-item">
+                            <a class="nav-link" href="index.html">Start</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="rooms.html">Pokoje</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>           
+            </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <section class="col-sm-8">
+                <div id="summary"></div>
+                <form id="formularz">
+                    <div class="form-group">
+                        <label for="imie">Imię i nazwisko</label>
+                        <input type="text" class="form-control" name="imie" id="imie" placeholder="Wpisz swoje imię i nazwisko">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adres email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Wpisz swój adres email">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input check" type="checkbox" id="inlineCheckbox1" value="option1"> Wakacje
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input check" type="checkbox" id="inlineCheckbox2" value="option2"> Ferie zimowe
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input check" type="checkbox" id="inlineCheckbox3" value="option3" > Pozostałe
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="messagebox">Wiadomość</label>
+                        <textarea class="form-control" id="messagebox" rows="3"></textarea>
+                        <small id="count" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="approve" id="approve" value="option1">
+                            Wyrażam zgodę na przetwarzanie danych w celu realizacji zgłoszenia.
+                        </label>
+                    </div>
+                    <button id="wyslij" type="submit" class="btn btn-primary">WYŚLIJ</button>
+                </form>
+            </section>
+            <aside class="col-sm-4">
+                    <nav>
+                        <ul style="color:aliceblue">
+                            <li >DANE KONTAKTOWE</li>
+                            <li>TELEFON</li>
+                            <li>555 666 777</li>
+                            <li>EMAIL:</li>
+                            <li>noclegwisla@gmail.com</li>
+                            <li>ADRES:</li>
+                            <li>ul. Wiślana 1</li>
+                            <li>44-444 Wisła</li>
+                        </ul>
+                    </nav>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

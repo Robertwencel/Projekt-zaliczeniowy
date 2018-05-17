@@ -1,0 +1,78 @@
+header{
+    background-color: rgb(36, 54, 216);
+}
+.error {
+    color: red;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: aliceblue;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+article{
+    background-color: rgb(175, 212, 96);
+    float: left;
+}
+aside{
+    background-color: rgb(60, 77, 235);
+    /*float: left;*/
+}
+aside nav ul li{
+    display: inherit;
+}
+footer{
+    background-color: rgb(36, 54, 216);
+}
+footer p{
+    color: aliceblue;
+}
+
+    /*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgb(14, 27, 143);
+    border-radius:3px;
+    background:#f7f7f7;
+}
+
+    /*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:rgb(60, 77, 235);
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.200em;
+    color:aliceblue;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:rgb(0, 140, 255);
+    /* Type */
+    color: aqua;
+}
+
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+
+    /*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
+}
